@@ -1,1 +1,14 @@
-hello i am Dr. Umesh Dutta
+// code for on board LED blinking connected to pin 13 on Arduino Uno
+
+void setup()
+{
+pinMode(13,OUTPUT);
+}
+
+void loop()
+{
+digitalWrite(13,HIGH);
+delay(1000);
+digitalWrite(13,LOW);
+delay(1000);
+}
