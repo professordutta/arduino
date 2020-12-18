@@ -1,0 +1,402 @@
+/********************/
+/* Favorites Style  */
+/********************/
+.dhItem:hover{
+	z-index:1000;
+}
+.fav-link:hover{
+	box-shadow:0px 0px 2px rgba(0,0,0,0.58);
+	-moz-box-shadow:0px 0px 2px rgba(0,0,0,0.58);
+}
+
+.dhItem.iframe{	
+	-webkit-transition-property: left,top,width,height;
+	-webkit-transition-duration: 250ms,250ms,250ms,250ms;
+	-webkit-transition-timing-function: linear,linear,linear,linear;
+	transition-property: left,top,width,height;
+	transition-duration: 250ms,250ms,250ms,250ms;
+	transition-timing-function: linear,linear,linear,linear;
+}
+.dhItem.iframe .fav-link{
+	-webkit-animation: flip 250ms; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	animation: flip 250ms; /* Safari and Chrome */
+	animation-fill-mode: forwards;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.dhItem.iframe .fav-link.pageLoad{
+	background-image : url(../../newtab/images/ajax-loader.gif);
+}
+
+.dhItem.iframe .fav-tile{
+	-webkit-animation: fadeout 250ms; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	animation: fadeout 250ms; /* Safari and Chrome */
+	animation-fill-mode: forwards;
+}
+}
+
+#newtab.theme_style-dark .fav-link:hover{
+	box-shadow: 1px 0px 7px black;
+	-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+}
+	
+.fav-link {
+	-border-radius:6px;
+	-webkit-transition-property: box-shadow,opacity;
+	-webkit-transition-duration:100ms,200ms;
+	-webkit-transition-timing-function:linear,linear;
+	transition-property: box-shadow,opacity;
+	transition-duration:100ms,200ms;
+	transition-timing-function:linear,linear;
+	background:white;
+	-box-sizing:content-box;
+}
+
+	/** fav-tile **/
+	.fav-tile{
+		box-sizing:border-box;
+		position:absolute;width:100%;height:100%;
+		border:1px solid #000;
+		-border-radius:4px;
+	}
+	#newtab.theme_style-light .fav-tile{
+		-border:1px solid rgba(0,0,0,1);
+		border: 1px solid rgba(0,0,0,0.21);
+	}
+
+	#newtab.theme_style-light .fav-tile.hasColor {
+		border-bottom: 0px;
+	}
+	#newtab.theme_style-dark .dhItem.reflect .fav-tile{
+		-2ebkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(white));
+		--webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.15)));
+		-webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(48%, transparent), to(rgba(255,255,255,0.20)));
+	}
+	.dhItem.dragging .fav-tile{
+		-webkit-box-reflect: none !important;
+		box-shadow:8px 10px 18px rgba(0,0,0,0.5);
+	}
+	/** ^fav-tile **/
+	/** fav-paint **/
+	.fav-paint{
+		box-sizing:content-box;
+		background-color:white;
+		-webkit-transition:all 70ms linear;
+		transition:all 70ms linear;
+		position:absolute;
+		width:100%;
+		top:0px;bottom:0px;
+	}
+	#newtab.titles-false .fav-paint{
+		bottom:0px;
+	}
+	/* in case titles has to be shown */
+	#newtab.titles-true .fav-paint{
+		bottom:22px;
+		border-bottom:1px solid #DDD;
+	}
+	
+	#newtab.titles-true  .fav-tile.hasColor .fav-paint{
+		 border-bottom:1px solid #000;
+	}
+	/***  ^fav-paint ***/
+	
+		/*** fav-thumb ***/
+		.fav-thumb{
+			box-sizing:border-box;
+			position: absolute;
+			-border-radius:5px 5px 0px 0px !important;
+			-webkit-transition:all 100ms linear;
+			-moz-transition:all 100ms linear;
+			background-repeat: no-repeat;
+		}
+		.fav-thumb.contain {
+			left:18px;right:18px;top:4px;bottom:4px;
+			background-size: contain;
+			background-position: center;
+		}
+
+		#newtab.titles-false .fav-thumb.contain{
+			top:4px;
+		}
+		/* when tile name is displayed, it's a bit odd that the thumb is right in the center,
+		   we move it only 1px down, just noticeable when tiles are small **/
+		 #newtab.titles-true .fav-thumb.contain{
+			top:6px;
+		}
+		
+		.fav-thumb.cover{
+			width:100%;top:0px;bottom:0px;
+			background-size: 100%; /*cover;*/
+			background-position: top center;
+		}
+		
+		#newtab.funky .fav-thumb{
+			width:100%;height:100%;top:0px;left:0px;
+			background-size:cover;
+		}
+		
+		#newtab.funky .fav-thumb.cover{
+			width:100%;height:100%;top:0px;left:0px;
+			background-size:250%;
+		}
+		/***  ^fav-thumb ***/
+		
+		/*** fav-shadow ***/
+		.fav-shadow{
+			box-sizing:border-box;
+			width:100%;
+			position:absolute;
+			top:100%;
+			-webkit-transition: opacity 0.35s ease-out;
+			-moz-transition: opacity 0.35s ease-out;
+			background-image: url('../images/favorites/shadow.png');
+			background-size: contain;
+			background-position: top center;
+			height: 13px;
+			background-repeat: no-repeat;
+		}
+		
+		.fav-link:hover .fav-shadow{
+			opacity:0.5;
+		}
+		/***  ^fav-shadow ***/
+		
+	/***  fav-overlay ***/	
+	.fav-overlay{
+		box-sizing:border-box;
+		position:absolute;top:0px;left:0px;width:100%;height:100%;
+		-webkit-transition:opacity 400ms linear;
+		-moz-transition:opacity 400ms linear 100ms;
+	}
+
+	.dhItem:hover .fav-overlay{
+		opacity:0;
+	}
+	
+	.fav-overlay{
+		background-image: -webkit-linear-gradient(
+		 top,
+		 rgba(0,7,5,0.0) 17%,
+		 rgba(115,115,115,0.15) 100%
+		);
+		background-image: -moz-linear-gradient(
+		 top,
+		 rgba(0,7,5,0.0) 47%,
+		 rgba(115,115,115,0.15) 100%
+		);
+	}
+	.fav-overlay.hasColor{
+		background-image: -moz-linear-gradient( top, rgba(220,227,225,0.1), rgba(35,35,35,0.1) );
+		background-image: -webkit-linear-gradient( top, rgba(220,227,225,0.1), rgba(35,35,35,0.1) );
+		background-image: -ms-linear-gradient( top, rgba(220,227,225,0.1), rgba(35,35,35,0.1) );
+	}
+	/***  ^fav-overlay ***/
+
+	/*** fav-name ***/
+	#newtab.titles-false .fav-name{
+		display:none;
+	}
+	
+	 #newtab.titles-true .fav-name,
+	 .fav-tile.showName .fav-name{
+		display:block;
+	 }
+	.fav-name {
+		display:none;
+		box-sizing:border-box;
+		-border-radius: 0px 0px 5px 5px;
+		position:absolute;width:100%;bottom:0px;
+		height:22px;line-height:22px;
+		background-color: rgba(212, 221, 223, 0.6);
+		-background-color: #f6f5f6;
+		border-top:1px solid white;
+		color: rgb(51, 51, 50);
+	}
+	
+	.fav-name > span{
+		text-align:left;-text-align: center;
+		text-overflow: ellipsis;
+		white-space:nowrap;	
+		overflow:hidden;
+		position:absolute;
+		left:8px;right:30px;
+		font-size:13px;
+		-font-family: 'Segoe UI',Tahoma,sans-serif;
+		font-family: 'Droid Sans', Alef;
+		--font-size:11px !important;
+		display: inline;
+		-vertical-align: middle;
+	}
+	.fav-name .fav-icon{
+		height: 16px;
+		right: 5px;
+		top: 2px;
+		position: relative;
+		float: right;
+		width: 16px;
+		background-size:16px;
+		box-sizing: border-box;
+	}
+	/*** ^fav-name ***/
+	
+	/*** #fav-iconize-logo ***/
+	#newtab.titles-true .fav-icon-img{
+		display:none;
+	}
+	.fav-icon-img{
+		position: absolute;
+		right: 6px;
+		bottom: 2px;
+		width: 16px;
+		height: 16px;
+		background:rgba(250,250,250,0.4);
+	}
+
+	.something-semantic {
+		position:relative;
+		display: table;
+		width:100%;
+		height:100%;
+		table-layout:fixed;
+	}
+
+	.something-else-semantic {
+		padding:10px;
+		overflow:hidden;white-space:nowrap;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 18px;
+		text-overflow:ellipsis;
+		font-family:arial,sans-serif;
+		text-shadow:1px 1px 2px #000;
+		color: #232;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+	.fav-tile.hasColor .something-else-semantic{
+		color:#FFF;
+	}
+
+
+	.fav-psuedo{
+		top:12.5%;
+		left:12.5%;
+		width:75%;
+		height:75%;
+		opacity:0.15;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:contain;
+		position:absolute;
+	}
+	/*** ^fav-iconize-logo ***/	
+	
+	/***** the loading / error states *****/
+	.fav-loader{
+		background-image:url('/skin/newtab/images/ajax-loader-medium.gif');
+		position: absolute;	
+		left:0px;top:0px;right:0px;bottom:0px;
+		background-size: 24px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.fav-empty {
+		position:absolute;width:100%;top:0px;bottom:22px;
+		background-repeat:no-repeat;background-position:center;
+	}
+	.fav-empty.offline {
+		background-size:30%;
+		background-image:url(../images/favorites/empty.png);
+	}
+	.fav-empty.error{
+		background-size:16px 16px;
+		background-image:url(../images/favorites/error.png);
+	}
+	/***** the edit / remove options *****/
+	#newtab.edit-mode .fav-functions{
+		display:block;
+	}
+	
+	.fav-functions {
+		display:none;
+		opacity: 0.32;
+		-webkit-transition: all 0.15s linear;
+		-moz-transition: all 0.15s linear;
+		position:absolute;
+		-background-color:rgba(0,0,0,0.12);
+		-border:1px solid rgba(255,255,255,0.2);
+		position: absolute;
+		height: 40px;
+		width: 100%;
+		top: 0px;
+	}
+	.fav-functions:hover{
+	    opacity:1 !important;
+		background-color:transparent;
+		-border:1px solid transparent;
+	}
+	.fav-link:hover .fav-functions{
+		opacity:1;
+	}
+	.fav-functions > div {
+		-webkit-transition: all 0.15s linear;
+		-moz-transition: all 0.15s linear;
+		opacity: 0.6;
+		width: 32px;
+		height: 32px;
+		position: relative;
+		border:1px solid rgba(0,0,0,0.5);
+		background-position: center;
+		background-size: 16px;
+		background-repeat:no-repeat;
+		background-color:rgba(0,0,0,0.4);		
+	}
+
+	.fav-functions > div:hover {
+		opacity:1;
+	}	
+		.fav-functions > .fav-remove{
+			background-color: white;
+			float:right;
+			background-image: url("../../newtab/images/x-button.png");
+			right: 11px;
+			top: 9px;
+		}
+					
+		.fav-functions > .fav-edit{
+			background-color: white;
+			background-image: url("../../newtab/images/edit-button.png");
+			float:left;
+			left: 11px;
+			top: 9px;
+		}
+		
+@keyframes flip
+{
+	from {-webkit-transform:perspective(400px) rotateY(0deg);}
+	to {-webkit-transform:perspective(400px) rotateY(180deg);}
+	from {transform:perspective(400px) rotateY(0deg);}
+	to {transform:perspective(400px) rotateY(180deg);}
+}
+
+@-webkit-keyframes flip /* Safari and Chrome */
+{
+	from {-webkit-transform:perspective(400px) rotateY(0deg);}
+	to {-webkit-transform:perspective(400px) rotateY(180deg);}
+}
+
+@-webkit-keyframes fadeout /* Safari and Chrome */
+{
+	from {opacity:1}
+	to {opacity:0}
+}
+@keyframes fadeout /* Safari and Chrome */
+{
+	from {opacity:1}
+	to {opacity:0}
+}

@@ -1,0 +1,102 @@
+.theme-blueLagune  #main-zone{ 
+	background-image: -webkit-radial-gradient(20% 20%, ellipse cover, rgb(12, 39, 65) 15%, rgb(36, 114, 184) 99%, rgb(125, 185, 232) 100%);
+	background-image: -moz-radial-gradient(20% 20%, ellipse cover, rgb(12, 39, 65) 15%, rgb(36, 114, 184) 99%, rgb(125, 185, 232) 100%);
+}
+.theme-black 		#main-zone  { background-color:black	;}
+.theme-royalPurple #main-zone{ 
+	background: -webkit-radial-gradient(5% 0%, ellipse cover, rgba(49,0,41,1) 0%,rgba(127,0,105,1) 40%,rgba(127,0,105,1) 62%);	
+	background: -moz-radial-gradient(5% 0%, ellipse cover, rgba(49,0,41,1) 0%,rgba(127,0,105,1) 40%,rgba(127,0,105,1) 62%);	
+
+}
+
+.theme-forest  #main-zone { 
+	background: -webkit-radial-gradient(40% 0%, ellipse cover, #627d4d 24%,#1f3b08 50%,#233A0F 77%);
+	background: -moz-radial-gradient(40% 0%, ellipse cover, #627d4d 24%,#1f3b08 50%,#233A0F 77%);
+}
+.theme-white 	       #main-zone{ background-color:white;}
+.theme-redWine  #main-zone{ 	
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(164,5,28)), color-stop(50%, rgb(110,1,20)), to(rgb(49,0,14)));
+	background: -moz-linear-gradient(top, rgb(164,5,28) 0%, rgb(110,1,20) 50%, rgb(49,0,14) 100%);
+}
+
+.theme-creamWhite  #main-zone{ 
+	background: -webkit-radial-gradient(83% 38%, ellipse cover, rgba(245,245,245,1) 19%,rgba(211,211,211,1) 45%,rgba(245,245,245,1) 72%,rgba(211,211,211,1) 89%);
+	background: -moz-radial-gradient(83% 38%, ellipse cover, rgba(245,245,245,1) 19%,rgba(211,211,211,1) 45%,rgba(245,245,245,1) 72%,rgba(211,211,211,1) 89%);
+
+}
+.theme-sunny #main-zone{	
+	background: -webkit-radial-gradient(25% 90%, ellipse cover, #EFDE70 0%,#fefcea 40%,#f1da86 82%);
+	background: -moz-radial-gradient(25% 90%, ellipse cover, #EFDE70 0%,#fefcea 40%,#f1da86 82%);
+}
+.theme-azure  #main-zone{ 
+	background: -webkit-radial-gradient(20% 20%, ellipse cover, rgba(125,185,232,1) 15%,rgba(36,114,184,1) 99%,rgba(12,39,65,1) 100%);
+	background: -moz-radial-gradient(20% 20%, ellipse cover, rgba(125,185,232,1) 15%,rgba(36,114,184,1) 99%,rgba(12,39,65,1) 100%);
+
+}
+
+.theme-shineOrange  #main-zone {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(200,52,44)), color-stop(50%, rgb(110,1,20)), to(rgb(165,48,10)));
+	background: -moz-linear-gradient(top, rgb(200,52,44) 0%, rgb(110,1,20) 50%, rgb(165,48,10) 100%);
+}
+.theme-gum  #main-zone{ 
+		background: -webkit-radial-gradient(15% 30%, ellipse cover, #FF1493 10%,#FF77BF 43%,#FFA5D5 82%);
+		background: -moz-radial-gradient(15% 30%, ellipse cover, #FF1493 10%,#FF77BF 43%,#FFA5D5 82%);		
+}
+.theme-night  #main-zone { 	
+	background: -webkit-radial-gradient(20% 20%, ellipse cover, rgba(8,8,8,1) 0%,rgba(29,30,31,1) 27%);
+	background: -moz-radial-gradient(20% 20%, ellipse cover, rgba(8,8,8,1) 0%,rgba(29,30,31,1) 27%);
+}
+.theme-turquoise #main-zone{
+		background: -webkit-radial-gradient(10% 40%, ellipse cover, rgba(21,115,155,1) 0%,rgba(23,124,165,1) 87%,rgba(23,124,165,1) 100%);
+		background: -moz-radial-gradient(10% 40%, ellipse cover, rgba(21,115,155,1) 0%,rgba(23,124,165,1) 87%,rgba(23,124,165,1) 100%);
+}
+
+.theme-solidWhite  #main-zone {
+	background-color: white;
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1));
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1));
+}
+
+.theme-d  #main-zone{
+	background: -webkit-radial-gradient(15% 58%, ellipse cover, rgba(245,245,220,1) 20%,rgba(222,224,204,1) 55%,rgba(245,245,220,1) 82%,rgba(222,222,204,1) 99%);
+}
+.theme-e  #main-zone{
+	background: -webkit-radial-gradient(5% 28%, ellipse cover, rgba(253,245,230,1) 10%,rgba(233,221,207,1) 25%,rgba(253,245,230,1) 72%,rgba(233,221,207,1) 93%);
+}
+.dfdd  #main-zone{
+	background: -webkit-radial-gradient(5% 5%, ellipse cover, rgba(255,245,238,1) 0%,rgba(233,221,217,1) 15%,rgba(255,245,238,1) 62%,rgba(233,221,217,1) 97%);
+}
+.theme-g  #main-zone{
+	background: -webkit-radial-gradient(5% 5%, ellipse cover, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 33%,rgba(253,253,253,1) 72%,rgba(239,239,239,1) 97%);
+}
+.theme-h  #main-zone{
+	background: -webkit-radial-gradient(15% 18%, ellipse cover, rgba(245,222,179,1) 3%,rgba(215,192,149,1) 23%,rgba(245,222,179,1) 62%,rgba(225,202,159,1) 97%);
+}
+
+
+
+.theme-whitesmoke   #main-zone{ background-color:whitesmoke;}
+.theme-OldLace 	#main-zone { background-color:OldLace;}			
+.theme-SeaShell    #main-zone { background-color:SeaShell;}
+.theme-Lavender     #main-zone{ background-color:Lavender;}			
+
+.theme-wheat	 	#main-zone  { background-color:wheat;}
+
+
+.theme-arab_tile 	 	#main-zone{ background: url('../images/patterns/arab_tile.png')		;}
+.theme-batthern 	 	#main-zone{ background: url('../images/patterns/batthern_@2X.png')		;}
+
+.theme-bo_play_pattern 	 	#main-zone{ background: url('../images/patterns/bo_play_pattern_@2X.png')	;}
+.theme-dark_wood 			 	#main-zone{ background: url('../images/patterns/dark_wood_@2X.jpg')	;}
+.theme-diagonal_striped_brick 	#main-zone{ background: url('../images/patterns/diagonal_striped_brick.png')	;}
+
+.theme-escheresque_ste	#main-zone{ background: url('../images/patterns/escheresque_ste_@2X.png')	;}
+.theme-gold_scale	#main-zone{ background: url('../images/patterns/gold_scale.png')	;}
+.theme-leather_1	#main-zone{ background: url('../images/patterns/leather_1_@2X.jpg')	;}
+
+.theme-purty_wood	#main-zone{ background: url('../images/patterns/purty_wood_@2X.jpg')	;}
+.theme-starring	#main-zone{ background: url('../images/patterns/starring_@2X.png')	;}
+.theme-tileable_wood_texture	#main-zone{ background: url('../images/patterns/tileable_wood_texture_@2X.jpg')	;}
+.theme-weave	#main-zone{ background: url('../images/patterns/weave_@2X.png')	;}
+.theme-wild_oliva	#main-zone{ background: url('../images/patterns/wild_oliva_@2X.jpg')	;}
+.theme-woven 			#main-zone{ background: url('../images/patterns/woven.png')			;}
